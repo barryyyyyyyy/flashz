@@ -1,60 +1,76 @@
 #include<iostream>
-#include<conio.h>
 #include<math.h>
-void main()
+#include<stdlib.h>
+using namespace std;
+int main()
 {
  int x,n,i,j=1;
  float a,b,c,d;
- clrscr();
- cout<<"Select a function to operate_\n\n1. Addition\n2. Substraction\n3. Multiplication\n4. Division\n5. Factorial\n6. Percentage\n7. Power\n8. Square_Root\n";
+ system("cls");
+ cout<<"Select a function to operate\n\n1. Addition\n2. Substraction\n3. Multiplication\n4. Division\n5. Factorial\n6. Percentage\n7. Power\n8. Square_Root\n9. Round_off\n";
+ cout<<"Enter your choice: ";
  cin>>x;
+ 
  switch(x)
  {
-   case 1:cout<<"Enter the numbers  ";
+   case 1:
+	  cout<<"Enter the numbers:  ";
 	  cin>>a>>b;
-	  cout<<"The result is_"<<a+b;
+	  cout<<"The result is: "<<a+b;
 	  break;
-   case 2:cout<<"Enter the greater number  ";
+   case 2:
+	  cout<<"Enter the greater number: ";
 	  cin>>a;
-	  cout<<"Enter the smaller number  ";
+	  cout<<"Enter the smaller number: ";
 	  cin>>b;
-	  cout<<"The result is_"<<a-b;
+	  cout<<"The result is: "<<a-b;
 	  break;
-   case 3:cout<<"Enter he numbers  ";
+   case 3:
+	  cout<<"Enter he numbers: ";
 	  cin>>a>>b;
-	  cout<<"The result is_"<<a*b;
+	  cout<<"The result is: "<<a*b;
 	  break;
-   case 4:cout<<"Enter Dividend  ";
+   case 4:
+	  cout<<"Enter Dividend: ";
 	  cin>>a;
-	  cout<<"Enter Divisor  ";
+	  cout<<"Enter Divisor: ";
 	  cin>>b;
-	  cout<<"The result is_"<<a/b;
+	  cout<<"The result is: "<<a/b;
 	  break;
-   case 5:cout<<"Enter the number ";
+   case 5:
+	  cout<<"Enter the number: ";
 	  cin>>n;
 	  for(i=n;i>0;i--)
 	   {
 	     j=j*i;
 	    }
-	  cout<<"The factorial of "<<n<<"is_"<<j;
+	  cout<<"The factorial of "<<n<<"is "<<j;
 	  break;
-   case 6:cout<<"Enter percent value  ";
+   case 6:
+	  cout<<"Enter percent value:  ";
 	  cin>>a;
-	  cout<<"Enter operand  ";
+	  cout<<"Enter operand:  ";
 	  cin>>b;
-	  cout<<"The result is_"<<(a*b)/100;
+	  cout<<"The result is: "<<(a*b)/100;
 	  break;
-   case 7:cout<<"Enter base  ";
+   case 7:
+	  cout<<"Enter base: ";
 	  cin>>a;
-	  cout<<"Enter power  ";
+	  cout<<"Enter power: ";
 	  cin>>b;
-	  cout<<"The result is_"<<pow(a,b);
+	  cout<<"The result is: "<<pow(a,b);
 	  break;
-   case 8:cout<<"Enter the number  ";
+   case 8:
+	  cout<<"Enter the number: ";
 	  cin>>a;
-	  cout<<"The result is_"<<sqrt(a);
+	  cout<<"The result is: "<<sqrt(a);
+	  break;
+   case 9:
+	  cout<<"Enter any number for round off: ";
+	  cin>>a;
+	  cout<<round(a);
 	  break;
   }
   cout<<"\n\n\nNothing more :)";
-  getch();
+  return 0;
 }
